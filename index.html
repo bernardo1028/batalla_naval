@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
+	<title>Battlesship</title>
+</head>
+<body>
+	<a class="navbar-logo">
+		<img src="2.png" alt="">
+	</a>
+	
+	<script src="battle.js"></script>
+	<h5>REFERENCIA PARA ORIENTARTE PARA LA POSICIÓN DE LOS BARCOS</h5>
+	<script type="text/javascript">
+		let matriz =[["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"], ["▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯", "▯"]];
+		document.write("↓--0--1--2--3--4---5--6--7--8--9-10-11-12-13-14 X" + "<br/>")
+		for (var i = 0; i < 15; i++) {
+			document.write((i) + "|");
+			for (var j = 0; j < 15; j++) {
+				document.write(" " + matriz[i][j] + "  ");
+			}
+			document.write("<br/>");
+		}
+		document.write(" Y ");
+
+
+	</script>
+	<h4>Qué el Jugador 1 coloque su nombre y sus barcos</h4>
+	<input type="text" name="name1" id="name1" placeholder="Nombre del primer Jugador"><br/>
+	BARCO 1<br/>
+	(<input type="number" required name= "J1B1C1" id="J1B1C1C1" placeholder="COORDENADA 1" max="14" min="0"> 
+	, <input type="number" required name= "J1B1C2" id="J1B1C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J1B1C1" id="J1B1C2C1" placeholder="COORDENADA 2" max="14" min="0"> 
+	, <input type="number" required name= "J1B1C2" id="J1B1C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 2<br/>
+	(<input type="number" required name= "J1B2C1" id="J1B2C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J1B2C2" id="J1B2C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J1B2C1" id="J1B2C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J1B2C2" id="J1B2C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 3<br/>
+	(<input type="number" required name= "J1B3C1" id="J1B3C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J1B3C2" id="J1B3C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J1B3C1" id="J1B3C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J1B3C2" id="J1B3C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 4<br/>
+	(<input type="number" required name= "J1B4C1" id="J1B4C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J1B4C2" id="J1B4C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J1B4C1" id="J1B4C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J1B4C2" id="J1B4C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 5<br/>
+	(<input type="number" required name= "J1B5C1" id="J1B5C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J1B5C2" id="J1B5C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J1B5C1" id="J1B5C2C1" placeholder="COORDENADA 2" max="14" min="0"¿>
+	, <input type="number" required name= "J1B5C2" id="J1B5C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 6<br/>
+	(<input type="number" required name= "J1B6C1" id="J1B6C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J1B6C2" id="J1B6C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J1B6C1" id="J1B6C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J1B6C2" id="J1B6C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 7<br/>
+	(<input type="number" required name= "J1B7C1" id="J1B7C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J1B7C2" id="J1B7C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J1B7C1" id="J1B7C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J1B7C2" id="J1B7C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 8<br/>
+	(<input type="number" required name= "J1B8C1" id="J1B8C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J1B8C2" id="J1B8C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J1B8C1" id="J1B8C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J1B8C2" id="J1B8C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	
+	<h4>Qué el Jugador 2 coloque su nombre y sus barcos</h4>
+	<input type="text" name="name2" id="nombre2" placeholder="Nombre del segundo Jugador" ><br/>
+	BARCO 1<br/>
+	(<input type="number" required name= "J2B1C1" id="J2B1C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B1C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J2B1C1" id="J2B1C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B1C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 2<br/>
+	(<input type="number" required name= "J2B1C1" id="J2B2C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B2C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J2B1C1" id="J2B2C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B2C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 3<br/>
+	(<input type="number" required name= "J2B1C1" id="J2B3C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B3C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J2B1C1" id="J2B3C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B3C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 4<br/>
+	(<input type="number" required name= "J2B1C1" id="J2B4C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B4C1C2" placeholder="COORDENADA 1" max="14" min="0" >)
+	(<input type="number" required name= "J2B1C1" id="J2B4C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B4C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 5<br/>
+	(<input type="number" required name= "J2B1C1" id="J2B5C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B5C1C2" placeholder="COORDENADA 1" max="14" min="0">)
+	(<input type="number" required name= "J2B1C1" id="J2B5C2C1" placeholder="COORDENADA 2" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B5C2C2" placeholder="COORDENADA 2" max="14" min="0">)<br/>
+	BARCO 6<br/>
+	(<input type="number" required name= "J2B1C1" id="J2B6C1C1" placeholder="COORDENADA 1" max="14" min="0">
+	, <input type="number" required name= "J2B1C1" id="J2B6C1C2" placeholder="COORDENADA 1" max="14" min="0" >)
+	(<input type="number" required name= "J2B1C1" id="J2B6C2C1" placeholder="COORDENADA 2" max="14" min="0" >
+	, <input type="number" required name= "J2B1C1" id="J2B6C2C2" placeholder="COORDENADA 2" max="14" min="0" >)<br/>
+	BARCO 7<br/>
+	(<input type="number" required name= "J2B1C1" id="J2B7C1C1" placeholder="COORDENADA 1" max="14" min="0" >
+	, <input type="number" required name= "J2B1C1" id="J2B7C1C2" placeholder="COORDENADA 1" max="14" min="0" >)
+	(<input type="number" required name= "J2B1C1" id="J2B7C2C1" placeholder="COORDENADA 2" max="14" min="0" >
+	, <input type="number" required name= "J2B1C1" id="J2B7C2C2" placeholder="COORDENADA 2" max="14" min="0" >)<br/>
+	BARCO 8<br/>
+	(<input type="number" required name= "J2B1C1" id="J2B8C1C1" placeholder="COORDENADA 1" max="14" min="0" >
+	, <input type="number" required name= "J2B1C1" id="J2B8C1C2" placeholder="COORDENADA 1" max="14" min="0" >)
+	(<input type="number" required name= "J2B1C1" id="J2B8C2C1" placeholder="COORDENADA 2" max="14" min="0" >
+	, <input type="number" required name= "J2B1C1" id="J2B8C2C2" placeholder="COORDENADA 2" max="14" min="0" >)<br/>
+	<h1>Cuando esten listos pulsen el siguiente boton</h1>
+	<input type="submit" name="enviar" onclick="inicia()">
+
+</body>
+</html>
